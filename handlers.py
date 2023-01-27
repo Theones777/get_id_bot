@@ -52,10 +52,3 @@ def register_handlers_common(dp: Dispatcher):
     dp.register_message_handler(name_insert, state=Ids.waiting_for_name)
     dp.register_message_handler(id_insert, state=Ids.waiting_for_id)
     dp.register_message_handler(cmd_cancel, Text(equals="отмена", ignore_case=True), state="*")
-
-
-CURATORS_PROFILES = {'602983339': 'geo_id04',  # Мачкарина Александра Юрьевна-sssascha
-                     '680245024': 'geo_id10',  # Золотых Екатерина Алексеевна Katarina-littleykrop
-
-                     '696241346': 'geo_AKononov',
-                     '872388646': 'geo_Nikita'}
